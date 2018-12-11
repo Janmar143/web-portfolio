@@ -1,0 +1,83 @@
+body{
+		background-image: url("../images/nature.jpeg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat	
+	}
+
+
+p{
+	font-family: system-ui;
+	font-size: 21px;
+}
+
+	h1{ 
+		font-size: 50px; color: white; 
+		 text-shadow: 1px 1px 2px black, 0 0 25px red;
+		 background: black url("../images/gray.jpg") left no-repeat;
+
+	}
+	h2{
+		font-size: 27px; color: white; font-family:Georgia, serif; 
+
+
+	}
+
+	h3{ font-family: 'Helvetica Neue', sans-serif; 
+	font-size: 17px; 
+	font-weight: 100; 
+	line-height: 20px; 
+	letter-spacing: 1px; 
+	padding: 0 0 0px; 
+	font-weight: bold; 
+	color: white; 
+	text-shadow: 2px 2px darkblue;}
+
+	img{
+		width: 230px;
+		height: 200px;
+		border-radius: 50%;
+
+	}
+	img.logo{
+		float:left; width:45px; height:45px;
+	}
+
+	div.background {
+  	border: 3px solid white;
+  	border-style:inset;
+  	width: 400px;
+  
+	}
+
+	div.transbox {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  padding-left: 25px;
+  filter: alpha(opacity=60); 
+  border-radius: 25px;
+}
+textarea{
+	overflow: auto;
+	font-family: 'Helvetica Neue';
+	  background-color: lightblue;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+
+.row:after {
+	display: flex;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
