@@ -1,3 +1,33 @@
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 45%;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
 body{
 		background-image: url("../images/nature.jpeg");
 		background-size: 100%;
@@ -5,10 +35,36 @@ body{
 	}
 
 
-p{
+p.lim{
 	font-family: system-ui;
 	font-size: 21px;
+	text-align: justify;
+
 }
+
+p.lim1{
+	font-family: system-ui;
+	font-size: 25px;
+	text-align: justify;
+
+}
+p.fot{
+	text-align: center;
+	font-family: system-ui;
+	font-size: 18px;
+	position: relative;	
+	top: 12px;
+	color: white;
+}
+h4.dim{
+	font-size: 50px; color: white; 
+		 text-shadow: 1px 1px 2px black, 0 0 25px red;
+	 position: relative;
+ left: 550px;
+
+ 
+}
+
 
 	h1{ 
 		font-size: 50px; color: white; 
@@ -25,8 +81,8 @@ p{
 
 	}
 
-	h3{ font-family: 'Helvetica Neue', sans-serif; 
-	font-size: 17px; 
+	h3.prof{ font-family: 'Helvetica Neue', sans-serif; 
+	font-size: 22px; 
 	font-weight: 100; 
 	line-height: 20px; 
 	letter-spacing: 1px; 
@@ -42,7 +98,15 @@ p{
 
 	}
 	img.logo{
-		float:left; width:45px; height:45px;
+		float:left; 
+		width:45px; 
+		height:45px;
+	}
+img.logo2{
+		float:left; 
+		width:45px; 
+		height:45px; 
+		border-radius: 50%;
 	}
 
 	div.background {
@@ -53,29 +117,31 @@ p{
 	}
 
 	div.transbox {
-  margin: 10px;
+  margin: 5px;
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.6;
-  padding-left: 25px;
+  padding: 15px;
   filter: alpha(opacity=60); 
   border-radius: 25px;
 }
 
-.column {
+.clum {
   float: left;
   width: 20%;
-  padding: 5px;
-  alig
+ 
+}
+.cen{
+	float: left;
+	width: 20%;
+	position: relative;
+ 	left: 150px;
+ 	top: -40px;
+ 
 }
 
 
-.row:after {
-	display: flex;
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 .para {
   /* The image used */
@@ -108,15 +174,28 @@ p{
 
 
 .container {
-  position: relative;
+  position: absolute;
   width: 50%;
+  left: -30px;
+}
+.container2 {
+  position: absolute;
+  width: 50%;
+  right: -30px;
+
+}
+.container3 {
+  position: relative;
+ left: 650px;
+ top: 130px;
+ 
 }
 
 .image {
   opacity: 1;
   display: block;
-  width: 150px;
-	height: 500px;
+  width: 120px;
+	height: 450px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -145,6 +224,7 @@ p{
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+  border-radius: 25px;
 }
 .pic{
 	width: 200px;
